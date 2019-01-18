@@ -1,0 +1,53 @@
+Testing the Vector-Based Bag:
+The initial bag is empty.
+isEmpty: returns 1; should be 1 (true)
+The bag contains 0 items:
+
+
+Adding 6 items to the bag:
+The bag contains 6 items:
+five four one one three two
+
+isEmpty: returns 0; should be 0 (false)
+getCurrentSize: returns 6; should be 6
+Try to add another entry: add("extra") returns 1
+contains("three"): returns 1; should be 1 (true)
+contains("ten"): returns 0; should be 0 (false)
+getFrequencyOf("one"): returns 2 should be 2
+remove("one"): returns 1; should be 1 (true)
+getFrequencyOf("one"): returns 1 should be 1
+remove("one"): returns 1; should be 1 (true)
+remove("one"): returns 0; should be 0 (false)
+
+The bag contains 5 items:
+extra five four three two
+
+After clearing the bag, isEmpty: returns 1; should be 1 (true)
+
+Let's test the new bag operations.
+
+Adding 9 items to first bag:
+First bag: The bag contains 9 items:
+2 4 6 6 8 10 12 15 15
+
+Adding 8 items to second bag:
+Second bag: The bag contains 8 items:
+3 6 9 12 12 15 15 18
+
+firstBag union secondBag:
+The bag contains 17 items:
+2 3 4 6 6 6 8 9 10 12 12 12 15 15 15 15 18
+
+firstBag intersect secondBag:
+The bag contains 4 items:
+6 12 15 15
+
+firstBag minus secondBag:
+The bag contains 5 items:
+2 4 6 8 10
+
+secondBag minus firstBag:
+The bag contains 4 items:
+3 9 12 18
+
+All done!
